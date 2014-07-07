@@ -14,6 +14,6 @@ Each example has no more than 100 lines of code. Also there is tagging is used i
 how to use
 ==================
 
-Use whatever NodeJS plugin / env you usually use to start NodeJs app.
+Use whatever NodeJS plugin / env you usually use to start NodeJS app (http://nodejs.org/).
 
-We use NodeJS here just for simplicity sake to be headless - not to be depended ont he browser.
+We use NodeJS here just for simplicity sake to be headless - not to be depended on the browser.
