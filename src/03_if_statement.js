@@ -43,3 +43,18 @@ if ( !(undefined == 0) ) console.log("undefined is NOT LIKE 0");
 
 // null vs 0
 if (! (null == 0) )      console.log("nul is NOT like 0");
+
+
+// once more about undefined
+
+var experiment = "undefined";       // meaning - a string !
+
+if(experiment === "undefined") console.log("yes");
+if(experiment !==  undefined) console.log("yes");
+
+var experiment2 = undefined;        // meaning really undefined
+if (experiment2 === undefined) console.log("yes2");
+if (experiment2 == "undefined") console.log("yes2");   // NO
+
+// but
+if (typeof experiment2 == "undefined") console.log("yes3");  // YES ! because there is type name called "undefined"
