@@ -1,16 +1,20 @@
 // #type #reflection
 
-console.log (typeof  1);          // number
+console.log (typeof  1);            // "number"
 
-console.log(typeof "");           // string
+console.log(typeof "");             // "string"
 
-console.log(typeof true);         // boolean
+console.log(typeof true);           // "boolean"
 
-console.log(typeof  undefined);   // undefined
+console.log(typeof  undefined);     // "undefined"
 
-console.log(typeof  NaN);         // number (which is not exist i guess)
+console.log(typeof  NaN);           // "number" (which is not exist i guess)
 
-console.log(typeof null);         // object
+console.log(typeof null);           // "object"
+
+console.log(typeof []);             // "object" -- array is object too
+
+console.log(typeof function() {});  // "function"
 
 
 var obj = {
