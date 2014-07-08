@@ -42,5 +42,5 @@ delete ar.f;
 console.log(ar.one);   // not it is "undefined"
 console.log(ar.f);   // not it is "undefined"
 
-console.log(obj.one);  // even though we deleted "one" from array, it is still lives in "object". Why? because it was copied "by value" since it is primitive Integer
+console.log(obj.one);  // even though we deleted "one" from array, it is still lives in "object". Why? because it was copied "by value" since it is primitive Number
 console.log(obj.f);    // Function was not deleted, since it was copied to array "by-reference"
