@@ -10,11 +10,11 @@ console.log(typeof  undefined);     // "undefined"
 
 console.log(typeof  NaN);           // "number" (which is not exist i guess)
 
-console.log(typeof null);           // "object"
+console.log(typeof null);           // "object"     -- Object.prototype
 
 console.log(typeof []);             // "object" -- array is object too
 
-console.log(typeof function() {});  // "function"
+console.log(typeof function() {});  // "function"  -- but actually functions in JS are objects too (Function.prototype)
 
 
 var obj = {
