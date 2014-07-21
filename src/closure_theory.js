@@ -72,4 +72,3 @@ var a2 = add(2);        // a1 stores x='1', and a2 stores x='2'
 
 console.log( a1(1) );   // calling the inner function / closure makes use of previously stored context / params / environment
 console.log( a2(2) );
-
