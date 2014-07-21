@@ -1,4 +1,4 @@
-// #closure
+// #closure #private
 
 // 1. private methods
 
