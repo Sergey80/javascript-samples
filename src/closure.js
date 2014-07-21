@@ -58,21 +58,18 @@ testList();  // expect "undefined" in output. since list[3] is out of the array
 
 console.log(":4 ----");
 
-// 4 - common use case:
-function newClosure(someNum, someSettings) {
+// 4 - closure + currying
+console.log();
 
-    var num = someNum;
-    var anArray = [1,2,3];
-    var settings = someSettings;
-
-    return function(x) {
-        num = num + x;      // creates a closure and puts 'num' to it
-        anArray.push(num);
-        console.log('num: ' + num + '\nanArray: ' + anArray.toString() + '\nsettings.someVar: ' + settings.someVar);
+function add(x) {
+    return function(y) {
+        return x + y;
     }
 }
-var objSettings = {someVar: 4}; // this object will not be changes
-console.log("> first call");
-newClosure(4, objSettings)(1);  // num: 5; anArray: 1,2,3,5; ref.someVar: 4;
-console.log("> second call");
-newClosure(4, objSettings)(1);  // num: 5; anArray: 1,2,3,5; ref.someVar: 4;
+
+var a1 = add(1);        // a1 and a2 are both closure, it means they both store information about their environment
+var a2 = add(2);        // a1 stores x='1', and a2 stores x='2'
+
+console.log( a1(1) );   // calling the inner function / closure makes use of previously stored context / params / environment
+console.log( a2(2) );
+
