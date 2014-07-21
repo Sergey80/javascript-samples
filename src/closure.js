@@ -56,7 +56,7 @@ function testList() {
 
 testList();  // expect "undefined" in output. since list[3] is out of the array
 
-console.log(":4 ----");
+console.log(":\4 ----");
 
 // 4 - closure + currying
 console.log();
