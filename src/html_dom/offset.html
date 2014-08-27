@@ -1,0 +1,36 @@
+<!-- #offset #offsetWidth #offestHeight #offsetTop -->
+
+<html><body>
+
+<style>
+    body {
+        border: 0;
+        padding-top: 1px;
+        margin: 0;
+        font-size: 14px;
+    }
+</style>
+
+<div id="parent">
+  parent
+  <div id="child">
+    child
+  </div>
+</div>
+
+</body>
+
+<script>
+    var childElement = document.getElementById("child");                    // two divs - parent and child
+    var parentElement = document.getElementById("parent");
+
+    console.log("parentElement: " +  parentElement.offsetTop);              // 1 px (due to "padding-top")
+    console.log("child.OffsetTop: "   +  childElement.offsetTop);           // more than 14 px; let call it "a"
+
+    console.log("child.OffsetHeight : " + childElement.offsetHeight);       // a - 1
+    console.log("child.OffsetWidth : " + childElement.offsetWidth);         // document width; let call it "b"
+
+    console.log("document.body.clientWidth: " + document.body.clientWidth); // = b
+</script>
+
+</html>

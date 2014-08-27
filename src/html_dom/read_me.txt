@@ -1,0 +1,1 @@
+this examples should be launched inside a browser
