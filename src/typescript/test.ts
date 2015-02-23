@@ -11,7 +11,7 @@ class A {
     }
 
     helloToBob(fn:Function): string {
-        return fn.apply("Bob");
+        return fn.apply(this, ["Bob"]);
     }
 }
 
