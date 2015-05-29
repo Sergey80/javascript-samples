@@ -1,3 +1,5 @@
 .idea/
+target/
+**/*.map
 node_modules/
 *.iml
