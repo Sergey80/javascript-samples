@@ -1,18 +1,25 @@
 // what does "new" do
 
-// http://zeekat.nl/articles/constructors-considered-mildly-confusing.html
-
 /*
-1. It creates a new object. The type of this object, is simply object.
+1. It creates a new empty object.
 
-2. It sets this new object's internal, inaccessible, [[prototype]]
-    property to be the constructor function's external, accessible,
-    prototype object (every function object automatically has a prototype property).
+2. Object is linked to different/another object. [more detail]
 
-3. It executes the constructor function, using the newly created object whenever this
-   is mentioned.
+3. Bran-new Object get bound as a this-keyword for the purpose of that function call.
 
-4. It returns the newly created object, unless the constructor function returns a
-   non-primitive value. In this case, that non-primitive value will be returned.
+4. It returns the newly created object (
+    unless the constructor function returns a
+    non-primitive value. In this case, that non-primitive value will be returned.
 */
+
+function foo() {
+    this.baz = "baz";
+    console.log(this.bar + " " + baz)
+}
+
+var bar = "bar";
+var baz = new foo();
+
+console.log(baz);               // { baz: 'baz' }  // as was said "it returns newly created object"
+                                // and "this" is that object itself for the function foo
 
