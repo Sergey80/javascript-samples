@@ -1,5 +1,5 @@
-Some "atoms" of information in the context of AngularJS domain/notions.
----
+#Some "atoms" of information in the context of AngularJS domain/notions.
+
 
 Angular Context - is an extension of browser-event loop (such as user interaction events).
     
@@ -82,4 +82,8 @@ How $watch works:
          </body>
          
          
-(Source/got from: http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/)         
+Source/got from: 
+
+    1. http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/
+    
+    2. https://www.youtube.com/watch?v=7PB4WqCVeRg
